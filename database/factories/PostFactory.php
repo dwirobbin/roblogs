@@ -38,7 +38,8 @@ class PostFactory extends Factory
             'title' => $title,
             'slug' => $slug,
             'desc' => $desc,
-            'img_cover' => $this->faker->image(public_path('storage/image-cover'), 1098, 500, null, false),
+            'img_cover' => null,
+            // 'img_cover' => $this->faker->image(public_path('storage/image-cover'), 1098, 500, null, false),
             'category_id' => Category::get(['id'])->random(),
             'user_id' => User::get(['id'])->random(),
         ];
