@@ -16,10 +16,12 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        $images = File::allFiles(public_path('storage/image-cover'));
-        if (count($images) > 0) {
-            foreach ($images as $image) {
-                File::delete(public_path('storage/image-cover/' . $image->getFilename()));
+        if (is_dir(public_path('storage/image-cover'))) {
+            $images = File::allFiles(public_path('storage/image-cover'));
+            if (count($images) > 0) {
+                foreach ($images as $image) {
+                    File::delete(public_path('storage/image-cover/' . $image->getFilename()));
+                }
             }
         }
 
