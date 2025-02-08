@@ -19,8 +19,8 @@ Berikut adalah langkah-langkahnya:
 
 1. Pertama, buka direktori tempat kumpulan project anda, lalu buka terminal.
 2. Ketik perintah
-   `git clone https://github.com/dwirobbin/yudha_blog.git` atau bisa download manual dengan meng-klik tautan https://github.com/dwirobbin/yudha_blog/archive/refs/heads/main.zip.
-3. Jika sudah selesai meng-clone atau mendownload, akses folder hasil clone/download (nama project: yudha_blog) dengan cara mengetikkan `cd yudha_blog` pada terminal.
+   `git clone https://github.com/dwirobbin/roblogs.git` atau bisa download manual dengan meng-klik tautan https://github.com/dwirobbin/roblogs/archive/refs/heads/main.zip.
+3. Jika sudah selesai meng-clone atau mendownload, akses folder hasil clone/download (nama project: roblogs) dengan cara mengetikkan `cd roblogs` pada terminal.
 4. Lalu ketikkan perintah `composer install` juga di terminal.
 5. Lanjut meng-copy file .env.example menjadi .env menggunakan perintah `cp .env.example .env` (asumsi menggunakan OS turunan UNIX) atau lakukanlah copy secara manual.
 6. Terus jalankan perintah `php artisan key:generate` pada terminal.
