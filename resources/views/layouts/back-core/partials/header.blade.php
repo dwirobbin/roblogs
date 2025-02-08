@@ -3,12 +3,10 @@
     <div class="logo-header" data-background-color="blue">
 
         <a href="{{ url('main-menu/dashboard') }}" class="logo">
-            <img src="https://ui-avatars.com/api/?name=Yudha+Blog&background=FFFFFF&size=45&rounded=true"
-                alt="navbar brand" class="mb-1">
+            <img src="https://ui-avatars.com/api/?name=Ro+Blogs&background=FFFFFF&size=45&rounded=true" alt="navbar brand" class="mb-1">
             <h3 class="navbar-brand text-white">{{ config('app.name') }}</h3>
         </a>
-        <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
-            data-target="collapse">
+        <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse">
             <span class="navbar-toggler-icon">
                 <i class="icon-menu"></i>
             </span>
@@ -30,8 +28,7 @@
         <div class="container-fluid">
             <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
                 <li class="nav-item dropdown hidden-caret">
-                    <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button"
-                        data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="notifDropdown" role="button" data-toggle="dropdown">
                         <i class="fa fa-bell"></i>
                         <span class="notification">
                             {{ auth()->user()->unreadNotifications->count() }}
@@ -59,8 +56,7 @@
                                                                 {{ $notification->created_at->format('d-m-Y H:i:s') }}
                                                             </div>
                                                         </div>
-                                                        <button
-                                                            class="btn btn-icon btn-success btn-round btn-xs mark-as-read"
+                                                        <button class="btn btn-icon btn-success btn-round btn-xs mark-as-read"
                                                             data-id="{{ $notification->id }}">
                                                             <i class="fa fa-check"></i>
                                                         </button>
@@ -88,8 +84,8 @@
                 <li class="nav-item dropdown hidden-caret">
                     <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#">
                         <div class="avatar-sm">
-                            <img src="https://ui-avatars.com/api/?name={{ urlencode(auth()->user()->name) }}&background=random"
-                                alt="..." class="avatar-img rounded-circle">
+                            <img src="https://ui-avatars.com/api/?name={{ urlencode(auth()->user()->name) }}&background=random" alt="..."
+                                class="avatar-img rounded-circle">
                         </div>
                     </a>
                     <ul class="dropdown-menu dropdown-user animated fadeIn">
